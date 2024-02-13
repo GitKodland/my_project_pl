@@ -8,11 +8,11 @@ bot = commands.Bot(command_prefix='$', intents=intents)
 
 @bot.event
 async def on_ready():
-    print(f'We have logged in as {bot.user}')
+    print(f'Zalogowaliśmy się jako {bot.user}')
 
 @bot.command()
 async def hello(ctx):
-    await ctx.send(f'Hi! I am a bot {bot.user}!')
+    await ctx.send(f'Cześć! Jestem botem, {bot.user}!')
 
 @bot.command()
 async def heh(ctx, count_heh = 5):
